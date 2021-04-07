@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pawan Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css" />
+<style>
+  /* CSS Reset */
+  body {
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url("/boxer-1984344_1280.jpg");
+  }
+
+  .left {
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    display: inline-block;
+    /* border: 2px solid rgb(245, 90, 18); */
+  }
+
+  .left img {
+    width: 78px;
+    filter: invert(100%);
+    /* this element changes color from black to white and vice versa */
+  }
+
+  .left div {
+    line-height: 26px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .mid {
+    display: block;
+    width: 45%;
+    margin: 20px auto;
+    /* border: 2px solid white; */
+  }
+
+  .right {
+    position: absolute;
+    right: 34px;
+    top: 38px;
+    display: inline-block;
+    /* border: 2px solid green; */
+  }
+
+  .navbar {
+    display: inline-block;
+  }
+
+  .navbar li {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+  }
+
+  .btn {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    /*If i does not put color element then it default(user change stylesheet) color element become black */
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 9px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: rgb(61, 52, 52);
+  }
+
+  .container {
+    width: 20%;
+    /* border: 2px solid white; */
+    margin: 48px 80px;
+    padding: 75px;
+    border-radius: 14px;
+  }
+
+  .form-group input {
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    width: 245px;
+    display: block;
+    padding: 1px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 8px
+  }
+
+  .container h1 {
+    text-align: center;
+  }
+
+  .container button {
+    display: block;
+    margin: 20px auto;
+  }
+</style>
+
+<body>
+  <header>
+    <!-- Left box for Logo -->
+    <div class="left">
+      <img src="/Gym Logo1.jpg" alt="" />
+      <div>Pawan Fitness</div>
+    </div>
+    <!-- Mid box for navigation  -->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Fitness Calculator</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- Right box for buttons -->
+    <div class="right">
+      <button class="btn">Call Us Now</button>
+      <button class="btn">Email Us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join the Best Gym of Jhansi Now</h1>
+    <form action="noaction.php">
+      <!-- noaction.php is a example for putting any kind of php -->
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Name">
+      </div>
+      <div class="form-group">
+        <input type="number" age="" placeholder="Enter Your Age">
+      </div>
+      <div class="form-group">
+        <input type="text" gender="" placeholder="Enter Your Gender">
+      </div>
+      <div class="form-group">
+        <input type="number" mobilenumber="" placeholder="Enter Your Mobile Number">
+      </div>
+      <div class="form-group">
+        <input type="text" email id="" placeholder="Enter Your Email Id">
+      </div>
+      <div class="form-group">
+        <input type="text" locality="" placeholder="Enter Your Locality">
+      </div>
+      <button class="btn">Submit Now</button>
+    </form>
+  </div>
+  </form>
+  </div>
+</body>
+
+</html>
